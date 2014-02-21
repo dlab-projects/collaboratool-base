@@ -1,0 +1,13 @@
+---
+# Note - LXDE doesn't handle screen resizes well, but I can't figure out how to
+# do a "minimal" install of XFCE
+- hosts: all
+  tasks:
+      # Note, we only need to update the cache once (in the first apt command)
+      - name: Basic LXDE
+        apt: pkg={{ item }} state=latest update_cache=yes
+        with_items:
+            - lxde-common
+            - xinit
+            - hal-info # Note sure if this matters
+            - xorg

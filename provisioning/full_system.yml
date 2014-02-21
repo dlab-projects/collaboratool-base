@@ -1,0 +1,9 @@
+---
+# This is not the current "standard" install (see README.md). It's an
+# alternative idea to install a minimal GUI from a Ubuntu server install.
+
+- hosts: all
+
+- include: minimal-gui.yml
+# This is just to show how you'd run multiple playbooks, e.g.:
+# - include: editor.yml
