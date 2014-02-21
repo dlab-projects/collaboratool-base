@@ -1,0 +1,5 @@
+In materials_template
+---------------------
+
+ - Add ansible task to download XKCD IPy notebook
+ - Make another notebook that uses the database
