@@ -40,12 +40,12 @@ Now do this *inside the VM*
 
 # Auto-provisioning
 
-Also inside the VM.
+Also inside the VM. But could in principle be done via ansible outside the
+machine. In this case, we absolutely need the openssh-server from above.
 
- - git clone https://github.com/oroeco/oroeco_analytics.git
- - cd oroeco_analytics/provisioning
+ - git clone https://github.com/dlab-berkeley/collaboratool-base.git
+ - cd collaboratool-base/provisioning
  - sudo ./install-local-ansible.sh
- - sudo ./run-local-ansible.sh
 
 To bring the machine up-to-date with changes in the ansible playbooks, simply
 re-run that last command!
@@ -53,3 +53,8 @@ re-run that last command!
 # Saving that work
 
 Simply File->Export from VirtualBox, using v1.0 OVA format.
+
+# Example of setting up a compute environment on top of that foundation:
+
+ - cd collaboratool-base/materials-template
+ - ./run-local-ansible.sh
