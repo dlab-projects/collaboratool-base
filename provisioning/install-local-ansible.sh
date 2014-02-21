@@ -6,8 +6,8 @@
 echo Starting $0
 
 # Note - the && syntax guarantees that we abort if we hit an error
-apt-get update && \
+sudo apt-get update && \
 # Dependencies to install/run ansible, python-yaml might be installed, but
 # better to be safe!
-apt-get -y install python-pip python-paramiko python-jinja2 python-httplib2 python-yaml && \
-pip install ansible
+sudo apt-get -y install python-pip python-paramiko python-jinja2 python-httplib2 python-yaml  && \
+sudo pip install ansible
