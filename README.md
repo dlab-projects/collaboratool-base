@@ -45,16 +45,17 @@ machine. In this case, we absolutely need the openssh-server from above.
 
  - git clone https://github.com/dlab-berkeley/collaboratool-base.git
  - cd collaboratool-base/provisioning
- - sudo ./install-local-ansible.sh
+ - ./install-local-ansible.sh
 
 To bring the machine up-to-date with changes in the ansible playbooks, simply
 re-run that last command!
 
 # Saving that work
 
-Simply File->Export from VirtualBox, using v1.0 OVA format.
+ - Shut down the machine
+ - File->Export from VirtualBox, using v1.0 OVA format
 
-# Example of setting up a compute environment on top of that foundation:
+# Example of setting up a compute environment on top of that foundation
 
  - cd collaboratool-base/materials-template
  - ./run-local-ansible.sh
