@@ -10,7 +10,7 @@ This is the current process:
 ## Prior to installing base OS
 
 Note: You need to do some of the below in the settings dialogue after creating
-the VM in VirtualBox. For now, we're using 32 bits Xubuntu .
+the VM in VirtualBox. For now, we're using 32 bits Xubuntu or linux Mint 32.
 
  - 1024 MB RAM
  - Leave default 8 GB of virtual drive
@@ -18,7 +18,8 @@ the VM in VirtualBox. For now, we're using 32 bits Xubuntu .
    installed)
  - Settings dialogue
     - Under Network->Advanced port forwarding:
-      2222 (127.0.0.1, host) -> 22 (10.0.2.15, guest)
+      2222 (127.0.0.1, host) -> 22 (10.0.2.15, guest), maybe a web port (8080 ->
+      80)?
     - Bump video memory to max, enable 3D accel (2D is currently windows only)
 
 ## Install OS
@@ -34,6 +35,8 @@ the VM in VirtualBox. For now, we're using 32 bits Xubuntu .
 
 Now do this *inside the VM*
 
+ - [dkms / guest extensions isn't necessary for Linux Mint, though it won't be
+   "up to date"]
  - apt-get install dkms git openssh-server
  - run installer (mount CD via VB GUI)
  - Now you can enable bidirectional clipboard in VirtualBox settings
