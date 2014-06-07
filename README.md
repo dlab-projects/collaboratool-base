@@ -1,6 +1,14 @@
 collaboratool-base
 ==================
 
+**NOTE - this project was an intermediate step to do some lightweight
+development on the collaboratool project. It remains primarily for
+archival/reference.**
+
+For current work, please see [https://github.com/dlab-berkeley/collaboratool](https://github.com/dlab-berkeley/collaboratool)
+
+---
+
 A minimal set of things required to enable collaborative, reproducible compute
 
 This is the current process:
